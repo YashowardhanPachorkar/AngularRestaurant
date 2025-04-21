@@ -1,0 +1,29 @@
+.registration-component{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 2%;
+}
+
+.illustration_image{
+    height: 50%; 
+    width: 50%;
+}
+
+.form-component{
+    display: flex; 
+    flex-direction: column;
+    align-self: center;
+    width: 550px;
+    justify-content: center;
+    background: #0055A4;
+    margin-top: 5%;
+    border-radius: 12px;
+}
+
+.form-selector{
+    align-self: center;
+    gap: 25px;
+}

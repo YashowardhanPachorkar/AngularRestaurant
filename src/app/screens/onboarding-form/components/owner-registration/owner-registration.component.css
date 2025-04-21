@@ -1,0 +1,72 @@
+.owner-register {
+  /* width: 100%;
+  max-width: 1000px; */
+  /* margin: 20px auto; */
+  padding: 20px;
+  margin-top: 8%;
+  align-self: center;
+  border-radius: 8px;
+  background: #0055A4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 650px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.owner-register h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.owner-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.owner-form label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.owner-form input,
+.owner-form select {
+  /* width: 100%; */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.owner-form input:focus,
+.owner-form select:focus {
+  border-color: #639fe0;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+button {
+  background: #d36f77;
+  color: #fff;
+  padding: 10px;
+  margin: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #5aa4f3;
+}
+
+.buttons{
+  /* gap: 55px; */
+  /* margin: 12px; */
+  align-items: center;
+  justify-content: center;
+}

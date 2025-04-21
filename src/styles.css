@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */ 
+/* body {
+    background: url('assets/homepage.png') no-repeat center center fixed;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+} */
+
+/* body {
+    height: 90vh;
+    background: url('assets/homepage.png') no-repeat center center;
+    background-size:auto;
+} */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(70, 68, 68);
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+
+
+body{
+  padding: 0px; 
+  margin: 0px;
+}

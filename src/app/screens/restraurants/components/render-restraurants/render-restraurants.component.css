@@ -1,0 +1,126 @@
+.render-restraurants,.render_veg_restraurants{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3%; 
+    margin-right: 3%;
+}
+
+.render_veg_restraurants h1{
+    color: blue;
+}
+
+.restraurant_lists{
+    display: flex; 
+    flex-direction: column; 
+    gap: 4px;
+    /* background-color: aquamarine; */
+}
+
+.restraurant_lists img{
+    height: 220px; 
+    width: 600px;
+    align-self: center;
+    margin-left: 12px;
+    border-radius: 12px;
+}
+
+.restraurant_card{
+    margin: 12px;
+    padding: 12px;
+    margin-top: 12px;
+    height: 260px;
+    display: flex; 
+    flex-direction: row;
+    gap: 24px;
+    border-radius: 20px;
+    /* background-color:rgb(115, 235, 235); */
+    background-color: #7ddceb;
+}
+
+.rendered-description{
+    display: flex; 
+    flex-direction: column;
+
+    /* gap: 0px; 
+    margin: 0px;
+    padding: 0px; */
+}
+
+.rendered-description h4{
+    /* color: cadetblue; */
+    font-size: 25px;
+    margin-bottom: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.type-restraurant{
+    font-size: 18px;
+    margin-top: 14px;
+    margin-bottom: 12px;
+}
+
+.ratting{
+    font-size: 20px;
+}
+
+.title{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: brown;
+}
+
+.container{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.type-selector{
+    padding: 15px;
+    display: flex; 
+    flex-direction: row;
+    gap: 12px;
+    border-radius: 12px;
+    background-color: #39b6ec;
+    margin-top: 12px;
+}
+
+.type-selector button{
+    font-size: 19px;
+    border-radius: 12px;
+    background-color: #e0eaed;
+    border: none;
+    padding: 15px;
+    /* margin: 0px; */
+    /* margin-top: 0px; */
+}
+
+
+.type-selector button:hover{
+    cursor: pointer;
+}
+
+.type-selector {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.type-selector button {
+    /* background-color: #28a745; Green color for Veg */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+
+.type-selector button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}

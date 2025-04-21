@@ -1,0 +1,31 @@
+<div class="container">
+   <div class="type-selector">
+      <button (click)="changeType('veg')" >Vegiterian</button>
+      <button (click)="changeType('non-veg')">Non-Vegiterian</button>
+      <button (click)="changeType('both')">Both</button>
+   </div>
+   <h1 class="title"><b>This is the list of the {{type}} type of restraurants</b></h1>
+   <div class="render-restraurants">
+      <div class="render_veg_restraurants">
+            <div class="restraurant_lists">
+               <div *ngFor="let restraurant of restraurants; let i = index">
+                  <div *ngIf="restraurant.type == type">
+                     <div class="restraurant_card">
+                        <img src={{restraurant.src}} alt="image of hotel">
+                        <div class="rendered-description">
+                              <h4>{{restraurant.name}}</h4>
+                              <span class="type-restraurant"><b>Type</b>: {{restraurant.type}}</span>
+                              <span class="type-restraurant"><b>Description:</b> {{restraurant.description}}</span>
+                              <span class="ratting">⭐ {{restraurant.ratting}}</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+      </div>
+
+
+            
+   
+   </div>
+</div>

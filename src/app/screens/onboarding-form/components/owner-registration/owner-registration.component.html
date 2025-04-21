@@ -1,0 +1,58 @@
+<div class="owner-register">
+  <h1>Owner Registration</h1>
+  <form class="owner-form" [formGroup]="ownersDetails">
+    <label>Owner's First Name: </label>
+    <input type="text" [formControl]="ownersDetails.controls.FirstName" placeholder="E.g., Yashowardhan" required>
+    <!-- <br> -->
+
+    <label>Owner's Middle Name: </label>
+    <input type="text" [formControl]="ownersDetails.controls.MiddleName" placeholder="E.g., Sudam">
+    <!-- <br> -->
+
+    <label>Owner's Last Name: </label>
+    <input type="text" [formControl]="ownersDetails.controls.LastName" placeholder="E.g., Pachorkar" required>
+    <!-- <br> -->
+
+    <label for="country-code">Country Code</label>
+    <select [formControl]="ownersDetails.controls.CountryCode" id="country-code" required>
+      <option value="+91">India (+91)</option>
+      <option value="+1">USA (+1)</option>
+      <option value="+44">UK (+44)</option>
+      <option value="+1">Canada (+1)</option>
+      <option value="+61">Australia (+61)</option>
+    </select>
+    <!-- <br> -->
+
+    <label>Enter the phone number</label>
+    <input type="text" [formControl]="ownersDetails.controls.PhoneNumber" placeholder="E.g., 9999999999" required>
+    <!-- <br> -->
+
+    <label>Owner's Email Id</label>
+    <input type="email" [formControl]="ownersDetails.controls.OwnerEmail" placeholder="@gmail.com" required>
+    <!-- <br> -->
+
+    <label>Select Government Id</label>
+    <select [formControl]="ownersDetails.controls.GovermentIdType" required>
+      <option value="pancard">pancard</option>
+      <option value="aadharcard">aadhar card</option>
+    </select>
+    <!-- <br> -->
+
+    <input type="text" [formControl]="ownersDetails.controls.GovemermentId" placeholder="785949494920" required>
+    <!-- <br> -->
+
+    <label>Password</label>
+    <input type="password" [formControl]="ownersDetails.controls.password" placeholder="Enter your password" required>
+    <!-- <br> -->
+
+    <label>Confirm Password</label>
+    <input type="password" [formControl]="ownersDetails.controls.cpassword" placeholder="Confirm your password" required>
+    <!-- <br> -->
+
+    <div class="buttons"> 
+      <button type="submit" (click)="addMore()">Add Owner</button>
+      <button type="submit" (click)="submitOwnerDetails()" >Register Your Details</button>
+    </div>
+  </form>
+
+</div>

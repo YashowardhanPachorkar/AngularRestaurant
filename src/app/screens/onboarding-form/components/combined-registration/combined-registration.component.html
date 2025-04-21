@@ -1,0 +1,9 @@
+<div class="registration-component">
+    <div class="form-component">
+        <div>
+            <app-owner-registration  (formTypeChange)="updateFormType($event)"  *ngIf="formType =='owner'"></app-owner-registration>
+            <app-restraurant-registration *ngIf="formType =='restaurant'"></app-restraurant-registration>
+        </div>
+    </div>
+    <img class="illustration_image" src="/assets/homepage1.png" >
+</div>
